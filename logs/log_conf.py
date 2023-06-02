@@ -19,7 +19,7 @@ class LogCrud:
 
         file_handler = logging.FileHandler(log_file)
         # Create a formatter for the file logs
-        file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='[%Y-%m-%d] [%H:%M:%S]')
+        file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='[%Y-%m-%d] [%H:%M:%S]')# noqa
         # Set the formatters for the handlers
         file_handler.setFormatter(file_formatter)
 
